@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "20.x"
       - name: Prettier
-        run: npx prettier --write **/*.js **/*.css **/*.yml **/*.json **/*.html .babelrc
+        run: npx prettier --write **/*.js **/*.css **/*.json **/*.html .babelrc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
