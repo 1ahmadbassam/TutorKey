@@ -1,11 +1,20 @@
 import React from "react";
 
 function Header() {
-    // TODO: Fill header
     return (
-        <nav className="header">
-            <h1>Header!</h1>
-        </nav>
+        <header>
+            <div className="logo">
+                <img src="../images/logo.jpg" alt="Logo" />
+                <h1>TutorKey</h1>
+            </div>
+            <nav className="navbar">
+                <p>OVERVIEW</p>
+                <p>TUTORS</p>
+                <p>CONTACT US</p>
+                <p>ABOUT</p>
+                <button className="navbar--sign-up">SIGN-UP</button>
+            </nav>
+        </header>
     )
 }
 

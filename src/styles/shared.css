@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'IBM Plex Sans', sans-serif;
+  height: 120px;
+  width: 100%;
+  background-color: #4F709C;
+  color:#FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 0.625rem;
+  margin-left: 5rem;
+  align-items: center;
+}
+
+.logo > img {
+  width: 120px;
+  height: 120px;
+}
+
+.logo > h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: 'Kiwi Maru', serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 4.75rem;
+  font-size: 1rem;
+}
+
+.navbar--sign-up {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #FFFFFF;
+  background-color: rgba(221, 167, 74);
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  padding: 0.625rem;
+  text-align: center;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.navbar--sign-up:hover {
+  background-color: RGBA(211, 157, 64);
+}

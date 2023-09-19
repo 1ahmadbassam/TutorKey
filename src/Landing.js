@@ -1,8 +1,10 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import "./styles/shared.css";
+import "./styles/index.css"
 
-function App() {
+function Landing() {
   return (
     <div className="app">
       <Header />
@@ -11,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default Landing;

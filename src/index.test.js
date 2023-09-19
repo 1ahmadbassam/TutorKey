@@ -1,7 +1,7 @@
 /** Non-functional code for unit tests on default HTML items
 
 import './styles/normalize.css';
-import './styles/index.css';
+import './styles/shared.css';
 
 const getDocumentElement = require("./index")
 

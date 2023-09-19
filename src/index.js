@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import Landing from "./Landing";
 import "./styles/normalize.css";
-import "./styles/index.css";
+import "./styles/shared.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<Landing />);
