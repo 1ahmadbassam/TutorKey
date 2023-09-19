@@ -1,9 +1,9 @@
 import React from "react";
-import {Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import "./styles/normalize.css"
+import "./styles/normalize.css";
 import "./styles/shared.css";
 import "./styles/index.css";
 

@@ -72,13 +72,12 @@ body {
 }
 
 .tutor-info--details > ul > li a {
-    text-decoration: none;
-    margin: auto 0;
-    padding: 0;
-    vertical-align: middle;
-    display: table-cell;
+  text-decoration: none;
+  margin: auto 0;
+  padding: 0;
+  vertical-align: middle;
+  display: table-cell;
 }
-
 
 .tutor-info--details > ul > li p {
   margin: auto 0;
@@ -90,10 +89,10 @@ body {
 }
 
 .tutor-info--message-button-link {
-    display: block;
-    margin: 0 0 1.5rem;
-    padding: 0;
-    text-decoration: none;
+  display: block;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  text-decoration: none;
 }
 
 .tutor-info--message-button {
