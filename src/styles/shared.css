@@ -66,6 +66,10 @@ header {
   transition: background-color 0.3s;
 }
 
+.table {
+  display: table;
+}
+
 .navbar--sign-up:hover {
   background-color: RGBA(211, 157, 64);
 }
