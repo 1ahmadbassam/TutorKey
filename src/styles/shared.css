@@ -47,6 +47,11 @@ header {
   font-size: 1rem;
 }
 
+.navbar a, .navbar a:visited {
+  text-decoration: none;
+  color:inherit;
+}
+
 .navbar--sign-up {
   font-family: "IBM Plex Sans", sans-serif;
   color: #ffffff;
@@ -62,4 +67,8 @@ header {
 
 .navbar--sign-up:hover {
   background-color: RGBA(211, 157, 64);
+}
+
+.table {
+  display: table;
 }

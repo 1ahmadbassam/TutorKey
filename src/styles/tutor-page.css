@@ -71,13 +71,29 @@ body {
   gap: 0.375rem;
 }
 
-.tutor-info--details > ul > li > p {
+.tutor-info--details > ul > li a {
+    text-decoration: none;
+    margin: auto 0;
+    padding: 0;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+
+.tutor-info--details > ul > li p {
   margin: auto 0;
 }
 
 .tutor-info--contact {
   align-self: flex-end;
   padding-bottom: 2rem;
+}
+
+.tutor-info--message-button-link {
+    display: block;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    text-decoration: none;
 }
 
 .tutor-info--message-button {
@@ -91,7 +107,6 @@ body {
   background: #79ac78;
   border: none;
   color: white;
-  margin-bottom: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
