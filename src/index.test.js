@@ -16,5 +16,5 @@ test("Check if font-size on webpage HTML is not altered", () => {
  */
 
 test("Simple addition placeholder test", () => {
-    expect(1+1).toBe(2);
+  expect(1 + 1).toBe(2);
 });
