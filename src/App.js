@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./Landing";
 import TutorPage from "./TutorPage";
 
+import "./styles/normalize.css";
+import "./styles/shared.css";
+
 function App() {
   return (
     <BrowserRouter>

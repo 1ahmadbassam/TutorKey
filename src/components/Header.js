@@ -6,7 +6,7 @@ function Header() {
         <header>
             <div className="logo">
                 <img src="./images/logo.jpg" alt="Logo" />
-                <h1>TutorKey</h1>
+                <h1 className="logo--title">TutorKey</h1>
             </div>
             <nav className="navbar">
                 <Link to="/">
