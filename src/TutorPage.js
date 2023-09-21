@@ -23,11 +23,16 @@ function TutorPage() {
          */
     name: "Tutor's name",
     /*
-            A float from 0.0 to 5.0
+            Rating float from 0.0 to 5.0
          */
-    rating: 5.0,
+    rating: 3.9,
     /*
-            User-friendly experience string, determined by Tutor him/herself.
+            Educational level of tutor, for example a high school diploma
+            or a bachelor's degree.
+     */
+    education: "Education",
+    /*
+            Experience level of tutor in tutoring said subject.
          */
     experience: "Experience",
     /*

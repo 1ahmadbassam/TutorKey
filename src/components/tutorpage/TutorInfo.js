@@ -40,17 +40,19 @@ function TutorInfo(props) {
     const priceRange = props.priceRange.end ? `Prices from $${props.priceRange.start} to $${props.priceRange.end}` : `Prices starting from $${props.priceRange.start}`;
 
     return (
-        <section className="tutor-info">
-            <div className="tutor-info--pfp">
+        <section className="tutor-page--tutor-info">
+            <div className="tutor-page--tutor-info--pfp">
                 <img src={`./images/${props.profilePic}`}  alt="Tutor profile pic"/>
             </div>
-            <div className="tutor-info--details">
+            <div className="tutor-page--tutor-info--details">
                 <h3>{props.name}</h3>
-                <div className="tutor-info--stars">
+                <div className="tutor-page--tutor-info--stars">
                     {ratingEl}
                 </div>
                 <ul>
                     <li><img alt="University icon" src="./images/university.svg"/>
+                        <p>{props.education}</p></li>
+                    <li><img alt="Bordered star icon" src="./images/bordered_star.svg"/>
                         <p>{props.experience}</p></li>
                     <li><img alt="Location icon" src="./images/location.svg"/>
                         <p>{props.location}</p></li>
@@ -63,10 +65,10 @@ function TutorInfo(props) {
                         <p>{priceRange}</p></li>
                 </ul>
             </div>
-            <aside className="tutor-info--contact">
-                <a href={`https://wa.me/${props.phoneNumber}`} target="_blank" rel="noreferrer" className="tutor-info--message-button-link"><button className="tutor-info--message-button"><img alt="Chat Icon" src="./images/chat.svg"/><span>Message</span>
+            <aside className="tutor-page--tutor-info--contact">
+                <a href={`https://wa.me/${props.phoneNumber}`} target="_blank" rel="noreferrer" className="tutor-page--tutor-info--message-button-link"><button className="tutor-page--tutor-info--message-button"><img alt="Chat Icon" src="./images/chat.svg"/><span>Message</span>
                 </button></a>
-                <div className="tutor-info--social-icons">
+                <div className="tutor-page--tutor-info--social-icons">
                     <a href={`https://facebook.com/${props.facebook}`} target="_blank" rel="noreferrer">
                         <img alt="Facebook" src="./images/facebook.svg"/>
                     </a>
