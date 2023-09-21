@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 function Landing() {
   return (
-    <div className="landing">
+    <div className="page landing">
       <Header />
       <Footer />
       <Outlet />
