@@ -14,7 +14,7 @@ header {
   font-family: "IBM Plex Sans", sans-serif;
   height: 120px;
   width: 100%;
-  background-color: #4f709c;
+  background-color: #557C89;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,7 @@ header {
   height: 120px;
 }
 
-.logo > h1 {
+.logo--title {
   font-size: 2.2rem;
   font-weight: 500;
   font-family: "Kiwi Maru", serif;
@@ -66,10 +66,49 @@ header {
   transition: background-color 0.3s;
 }
 
+.navbar--sign-up:hover {
+  background-color: RGBA(211, 157, 64);
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 0.375rem;
+}
+
+.social-icons > a > img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.social-icons > a {
+  text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: #557C89;
+  color: #FFFFFF;
+  font-family: "IBM Plex Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .table {
   display: table;
 }
 
-.navbar--sign-up:hover {
-  background-color: RGBA(211, 157, 64);
+.no-margin {
+  margin: 0;
+}
+
+.footer > h1 {
+    display: inline-block;
 }
