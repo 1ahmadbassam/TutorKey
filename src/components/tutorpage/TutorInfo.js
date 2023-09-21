@@ -68,7 +68,7 @@ function TutorInfo(props) {
             <aside className="tutor-page--tutor-info--contact">
                 <a href={`https://wa.me/${props.phoneNumber}`} target="_blank" rel="noreferrer" className="tutor-page--tutor-info--message-button-link"><button className="tutor-page--tutor-info--message-button"><img alt="Chat Icon" src="./images/chat.svg"/><span>Message</span>
                 </button></a>
-                <div className="tutor-page--tutor-info--social-icons">
+                <div className="social-icons tutor-page--tutor-info--social-icons">
                     <a href={`https://facebook.com/${props.facebook}`} target="_blank" rel="noreferrer">
                         <img alt="Facebook" src="./images/facebook.svg"/>
                     </a>
