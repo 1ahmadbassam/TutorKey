@@ -14,7 +14,7 @@ header {
   font-family: "IBM Plex Sans", sans-serif;
   height: 120px;
   width: 100%;
-  background-color: #557C89;
+  background-color: #557c89;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -92,8 +92,8 @@ header {
   bottom: 0;
   width: 100%;
   padding: 1rem;
-  background-color: #557C89;
-  color: #FFFFFF;
+  background-color: #557c89;
+  color: #ffffff;
   font-family: "IBM Plex Sans", sans-serif;
   display: flex;
   flex-direction: column;
@@ -110,5 +110,5 @@ header {
 }
 
 .footer > h1 {
-    display: inline-block;
+  display: inline-block;
 }
