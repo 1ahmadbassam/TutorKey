@@ -6,8 +6,6 @@ import Footer from "./components/Footer";
 
 import TutorInfo from "./components/tutorpage/TutorInfo";
 
-import "./styles/normalize.css";
-import "./styles/shared.css";
 import "./styles/tutor-page.css";
 
 function TutorPage() {
