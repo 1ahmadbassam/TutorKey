@@ -76,7 +76,7 @@ header {
 }
 
 .navbar--sign-up:hover {
-  background-color: RGBA(211, 157, 64);
+  background-color: rgba(211, 157, 64);
 }
 
 .social-icons {
@@ -123,3 +123,27 @@ header {
 .table {
   display: table;
 }
+
+.card-item {
+  max-width: 250px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-item > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-item > h4 {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #11323D;
+}
+
+

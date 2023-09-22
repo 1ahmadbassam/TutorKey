@@ -1,21 +1,5 @@
 import React from "react";
-
-function getRatingElement(rating) {
-    /* Prevent weird bugs from happening in case rating data goes invalid */
-    if (rating < 0.0) rating = 0.0;
-    else if (rating > 5.0) rating = 5.0;
-
-    const ratingEl = []
-    rating = Math.floor(rating);
-    while (rating > 0) {
-        ratingEl.push(<img alt="Star" src="./images/star-filled.svg"/>)
-        rating--;
-    }
-    for (let i = ratingEl.length; i < 5; i++) {
-        ratingEl.push(<img alt="Star" src="./images/star.svg"/>)
-    }
-    return ratingEl;
-}
+import {getRatingElement} from "../../TutorPage";
 
 function getTutorType(type) {
     switch (type) {
@@ -33,7 +17,7 @@ function getTutorType(type) {
 }
 
 function TutorInfo(props) {
-    const ratingEl = getRatingElement(props.rating);
+    const ratingEl = getRatingElement(props.review.rating);
     const tutorType = getTutorType(props.type);
     const tutorPic = props.type === 1 ? "laptop.svg" : "interaction.svg";
     const tutorAltPic = props.type === 1 ? "Laptop icon" : "Interaction icon";
@@ -46,7 +30,7 @@ function TutorInfo(props) {
             </div>
             <div className="tutor-page--tutor-info--details">
                 <h3>{props.name}</h3>
-                <div className="tutor-page--tutor-info--stars">
+                <div className="tutor-page--tutor-review--stars">
                     {ratingEl}
                 </div>
                 <ul>

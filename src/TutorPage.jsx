@@ -7,6 +7,37 @@ import Footer from "./components/Footer";
 import TutorInfo from "./components/tutorpage/TutorInfo";
 
 import "./styles/tutor-page.css";
+import TutorAbout from "./components/tutorpage/TutorAbout";
+import TutorReview from "./components/tutorpage/TutorReview";
+import TutorSubsets from "./components/tutorpage/TutorSubsets";
+
+function generateGibberish() {
+  let str = "Lorem "
+  for (let i = 0; i < 5; i++) {
+    str+=str;
+  }
+  return str;
+}
+
+export function getRatingElement(rating) {
+  /* Prevent weird bugs from happening in case rating data goes invalid */
+  if (rating < 0.0) rating = 0.0;
+  else if (rating > 5.0) rating = 5.0;
+
+  const ratingEl = []
+  let j = 0;
+  rating = Math.floor(rating);
+  while (rating > 0) {
+    ratingEl.push(<img key={j} alt="Star" src="./images/star-filled.svg"/>)
+    rating--;
+    j++;
+  }
+  for (let i = ratingEl.length; i < 5; i++) {
+    ratingEl.push(<img key={j} alt="Star" src="./images/star.svg"/>)
+    j++;
+  }
+  return ratingEl;
+}
 
 function TutorPage() {
   const sampleData = {
@@ -21,9 +52,40 @@ function TutorPage() {
          */
     name: "Tutor's name",
     /*
-            Rating float from 0.0 to 5.0
+            Review section for tutor
          */
-    rating: 3.9,
+    review: {
+      /*
+            Average rating, computed from individual ratings.
+       */
+      rating: 3.44,
+      /*
+            Detailed review numbers for said tutor.
+       */
+      totalReviews: 1020,
+      countOneReviews: 27,
+      countTwoReviews: 122,
+      countThreeReviews: 345,
+      countFourReviews: 432,
+      countFiveReviews: 94,
+      /*
+            Top (highest rated and most critical) reviews.
+       */
+      topRating: {
+        profilePic: "placeholder.png",
+        name: "Student X",
+        message: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Alias culpa dolorum mollitia odit possimus quis quo tempore vel! 
+        Beatae deserunt distinctio impedit iusto non odit quisquam sapiente tempore ut voluptate.`
+      },
+      mostCriticalRating: {
+        profilePic: "placeholder.png",
+        name: "Student Y",
+        message: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Alias culpa dolorum mollitia odit possimus quis quo tempore vel! 
+        Beatae deserunt distinctio impedit iusto non odit quisquam sapiente tempore ut voluptate.`
+      },
+    },
     /*
             Educational level of tutor, for example a high school diploma
             or a bachelor's degree.
@@ -75,12 +137,75 @@ function TutorPage() {
     instagram: "@tutor",
     twitter: "@tutor",
     linkedIn: "@tutor",
+    /*
+            About section for tutor. The about section is designed to handle small
+            and large about sections.
+     */
+    about: "",
+    /*
+            Services offered by the tutor and special needs.
+            An array of (Card) of objects which consist of:
+              - img: An image on the card.
+              - alt: An alt text to be displayed if the image is not available.
+              - text: The text shown on the card.
+     */
+    servicesOffered: [
+      {
+        img: "autism.jpg",
+        alt: "Autism",
+        text: "Autism and ADHD"
+      },
+      {
+        img: "autism.jpg",
+        alt: "Autism",
+        text: "Autism and ADHD"
+      },
+      {
+        img: "autism.jpg",
+        alt: "Autism",
+        text: "Autism and ADHD"
+      },
+      {
+        img: "autism.jpg",
+        alt: "Autism",
+        text: "Autism and ADHD"
+      }
+    ],
+    /*
+            Languages for the tutor.
+            An array of (Card) of objects which consist of:
+              - img: An image on the card.
+              - alt: An alt text to be displayed if the image is not available.
+              - text: The text shown on the card.
+     */
+    languages: [
+      {
+        img: "english.jpg",
+        alt: "English",
+        text: "English"
+      },
+      {
+        img: "english.jpg",
+        alt: "English",
+        text: "English"
+      },
+      {
+        img: "english.jpg",
+        alt: "English",
+        text: "English"
+      },
+    ]
   };
 
+  sampleData.about = generateGibberish();
+
   return (
-    <div className="tutorPage">
+    <div className="page tutorPage">
       <Header />
       <TutorInfo {...sampleData} />
+      <TutorAbout about={sampleData.about} />
+      <TutorReview review={sampleData.review} />
+      <TutorSubsets servicesOffered={sampleData.servicesOffered} languages={sampleData.languages} />
       <Footer />
       <Outlet />
     </div>
