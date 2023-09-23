@@ -328,12 +328,6 @@ body {
   margin: 0 0 1rem;
 }
 
-
-
-
-
-
-
 /* FIX CLASSES NAMES */
 
 .Tutor_FAQ_Section {
@@ -341,9 +335,6 @@ body {
   flex-direction: column;
   gap: 3rem;
 }
-
-
-
 
 /* FAQ SECTION */
 .FAQ_Title {
@@ -370,8 +361,8 @@ body {
 }
 
 .FAQ_Questions {
-  width: 100rem; 
-  height: 5.3125rem; 
+  width: 100rem;
+  height: 5.3125rem;
   background-color: #668c98;
   border: none;
   border-radius: 1.075rem;
@@ -379,20 +370,22 @@ body {
   padding-left: 2.15rem;
   font-size: 2.58rem;
   cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s;
-  color:white;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-.FAQ_Questions:hover{
-  background-color: #144f63; 
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); 
+.FAQ_Questions:hover {
+  background-color: #144f63;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-#Down_Arrows_in_FAQs{
+#Down_Arrows_in_FAQs {
   margin-top: 0.6rem;
   margin-right: 1.5rem;
 }
@@ -411,7 +404,6 @@ body {
   z-index: 1;
   margin-top: 0.25rem;
   font-family: "IBM Plex Sans", sans-serif;
-  
 }
 
 .DropDown:hover .Dropdown-Content,
@@ -430,10 +422,6 @@ body {
   cursor: pointer;
 }
 
-
-
-
-
 /* INPUT WITH SUBMIT SECTION  */
 .Add_Your_Question_Text {
   font-size: 2.5rem;
@@ -443,8 +431,8 @@ body {
   margin-bottom: 0;
 }
 
-.Adding_Question_With_Submit{
-  display:flex;
+.Adding_Question_With_Submit {
+  display: flex;
   justify-content: center;
   gap: 0;
   margin-bottom: 4rem;
@@ -467,15 +455,15 @@ body {
 }
 
 .Adding_Question_FAQs::placeholder {
-  color: white; 
+  color: white;
   padding-left: 0.6rem;
   font-size: 1.5rem;
 }
 
-.Submit_Button{
+.Submit_Button {
   width: 6rem;
   border: none;
-  background-color: #FF914D;
+  background-color: #ff914d;
   transition: background-color 0.3s;
   margin-left: 0;
   border-top-right-radius: 1.075rem;
@@ -486,7 +474,5 @@ body {
 }
 
 .Submit_Button:hover {
-  background-color: #FF7A33; 
+  background-color: #ff7a33;
 }
-
-
