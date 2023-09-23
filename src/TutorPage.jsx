@@ -10,6 +10,7 @@ import "./styles/tutor-page.css";
 import TutorAbout from "./components/tutorpage/TutorAbout";
 import TutorReview from "./components/tutorpage/TutorReview";
 import TutorSubsets from "./components/tutorpage/TutorSubsets";
+import TutorFAQs from "./components/tutorpage/TutorFAQs";
 
 function generateGibberish() {
   let str = "Lorem "
@@ -198,13 +199,36 @@ function TutorPage() {
   };
 
   sampleData.about = generateGibberish();
-
+  
+  const faqItems = [
+    {
+      question: "Question1",
+      answer: "Answer to Question1",
+    },
+    {
+      question: "Question2",
+      answer: "Answer to Question2",
+    },
+    {
+      question: "Question3",
+      answer: "Answer to Question3",
+    },
+    {
+      question: "Question4",
+      answer: "Answer to Question4",
+    },
+    {
+      question: "Question5",
+      answer: "Answer to Question5",
+    },
+  ];
   return (
     <div className="page tutorPage">
       <Header />
       <TutorInfo {...sampleData} />
       <TutorAbout about={sampleData.about} />
       <TutorReview review={sampleData.review} />
+      <TutorFAQs faqItems={faqItems} />
       <TutorSubsets servicesOffered={sampleData.servicesOffered} languages={sampleData.languages} />
       <Footer />
       <Outlet />
