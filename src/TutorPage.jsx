@@ -4,9 +4,9 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import TutorInfo from "./components/tutorpage/TutorInfo";
-
 import "./styles/tutor-page.css";
+
+import TutorInfo from "./components/tutorpage/TutorInfo";
 import TutorAbout from "./components/tutorpage/TutorAbout";
 import TutorReview from "./components/tutorpage/TutorReview";
 import TutorSubsets from "./components/tutorpage/TutorSubsets";
