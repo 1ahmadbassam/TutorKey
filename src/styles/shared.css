@@ -144,61 +144,61 @@ header {
   color: #11323d;
 }
 
-#Second-Header{
+#Second-Header {
   display: flex;
   flex-direction: row;
-  background-color: #557C89;
+  background-color: #557c89;
   justify-content: space-evenly;
-  padding:10px;
+  padding: 10px;
 }
-#Text-Div{
+#Text-Div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#Text{
+#Text {
   width: 600px;
   height: 174px;
   top: 211px;
-  left:168px;
+  left: 168px;
   border: 1px;
-  color:white;
-  font-family: 'Kiwi Maru',serif;
+  color: white;
+  font-family: "Kiwi Maru", serif;
   font-size: 40px;
-  font-weight: 500;   
+  font-weight: 500;
   line-height: 58px;
   text-align: left;
 }
 
-#Diagram{
+#Diagram {
   width: 500px;
   height: 300px;
 }
 
-#Books{
+#Books {
   width: 100px;
 }
 
-#Books-Div{
+#Books-Div {
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 
-#Features{
+#Features {
   background-color: white;
-  color: #557C89;
+  color: #557c89;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-direction: row;
-  gap:20px;
+  gap: 20px;
   align-items: center;
-  margin-left:70px;
-  margin-right:70px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
-.Box{
+.Box {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -206,70 +206,71 @@ header {
   margin-bottom: 2px;
   font-size: 20px;
   font-family: "IBM Plex Sans", sans-serif;
-  width:558px;
-  height:380px;
-  color: #557C89;
-  border-left:5px solid #557C89;
+  width: 558px;
+  height: 380px;
+  color: #557c89;
+  border-left: 5px solid #557c89;
   padding-left: 5px;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-.col1{
+.col1 {
   display: flex;
   flex-direction: column;
 }
-.col2{
+.col2 {
   display: flex;
   flex-direction: column;
 }
-.img1{
+.img1 {
   margin-top: 2px;
   margin-bottom: 0px;
-  width:275px;
-  height:50px;
+  width: 275px;
+  height: 50px;
 }
 
-.img2{
+.img2 {
   margin-top: 2px;
   margin-bottom: 0px;
-  width:100px;
-  height:50px;
+  width: 100px;
+  height: 50px;
 }
 
-.img3{
+.img3 {
   margin-top: 2px;
   margin-bottom: 0px;
-  height:50px;
-  width:100px;
+  height: 50px;
+  width: 100px;
 }
 
-.img4{
+.img4 {
   margin-top: 2px;
   margin-bottom: 0px;
-  height:67px;
-  width:65px;
+  height: 67px;
+  width: 65px;
 }
 
-.img5{
+.img5 {
   margin-top: 2px;
   margin-bottom: 0px;
-  height:67px;
-  width:65px;
+  height: 67px;
+  width: 65px;
 }
 
-.img6{
+.img6 {
   margin-top: 2px;
   margin-bottom: 0px;
-  height:57px;
-  width:55px;
+  height: 57px;
+  width: 55px;
 }
 
-h1,h2{
+h1,
+h2 {
   margin-bottom: 0;
 }
 
-#k{
-  width:265px;
+#k {
+  width: 265px;
   height: 63px;
 }
