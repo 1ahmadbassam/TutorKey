@@ -13,9 +13,9 @@ import TutorSubsets from "./components/tutorpage/TutorSubsets";
 import TutorFAQs from "./components/tutorpage/TutorFAQs";
 
 function generateGibberish() {
-  let str = "Lorem "
+  let str = "Lorem ";
   for (let i = 0; i < 5; i++) {
-    str+=str;
+    str += str;
   }
   return str;
 }
@@ -25,16 +25,16 @@ export function getRatingElement(rating) {
   if (rating < 0.0) rating = 0.0;
   else if (rating > 5.0) rating = 5.0;
 
-  const ratingEl = []
+  const ratingEl = [];
   let j = 0;
   rating = Math.floor(rating);
   while (rating > 0) {
-    ratingEl.push(<img key={j} alt="Star" src="./images/star-filled.svg"/>)
+    ratingEl.push(<img key={j} alt="Star" src="./images/star-filled.svg" />);
     rating--;
     j++;
   }
   for (let i = ratingEl.length; i < 5; i++) {
-    ratingEl.push(<img key={j} alt="Star" src="./images/star.svg"/>)
+    ratingEl.push(<img key={j} alt="Star" src="./images/star.svg" />);
     j++;
   }
   return ratingEl;
@@ -77,14 +77,14 @@ function TutorPage() {
         name: "Student X",
         message: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Alias culpa dolorum mollitia odit possimus quis quo tempore vel! 
-        Beatae deserunt distinctio impedit iusto non odit quisquam sapiente tempore ut voluptate.`
+        Beatae deserunt distinctio impedit iusto non odit quisquam sapiente tempore ut voluptate.`,
       },
       mostCriticalRating: {
         profilePic: "placeholder.png",
         name: "Student Y",
         message: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Alias culpa dolorum mollitia odit possimus quis quo tempore vel! 
-        Beatae deserunt distinctio impedit iusto non odit quisquam sapiente tempore ut voluptate.`
+        Beatae deserunt distinctio impedit iusto non odit quisquam sapiente tempore ut voluptate.`,
       },
     },
     /*
@@ -144,6 +144,32 @@ function TutorPage() {
      */
     about: "",
     /*
+            FAQ items for given tutor. Usually picked from the top questions 
+            asked by students and replied to by tutor.
+    */
+    faq: [
+      {
+        question: "Question1",
+        answer: "Answer to Question1",
+      },
+      {
+        question: "Question2",
+        answer: "Answer to Question2",
+      },
+      {
+        question: "Question3",
+        answer: "Answer to Question3",
+      },
+      {
+        question: "Question4",
+        answer: "Answer to Question4",
+      },
+      {
+        question: "Question5",
+        answer: "Answer to Question5",
+      },
+    ],
+    /*
             Services offered by the tutor and special needs.
             An array of (Card) of objects which consist of:
               - img: An image on the card.
@@ -154,23 +180,23 @@ function TutorPage() {
       {
         img: "autism.jpg",
         alt: "Autism",
-        text: "Autism and ADHD"
+        text: "Autism and ADHD",
       },
       {
         img: "autism.jpg",
         alt: "Autism",
-        text: "Autism and ADHD"
+        text: "Autism and ADHD",
       },
       {
         img: "autism.jpg",
         alt: "Autism",
-        text: "Autism and ADHD"
+        text: "Autism and ADHD",
       },
       {
         img: "autism.jpg",
         alt: "Autism",
-        text: "Autism and ADHD"
-      }
+        text: "Autism and ADHD",
+      },
     ],
     /*
             Languages for the tutor.
@@ -183,53 +209,33 @@ function TutorPage() {
       {
         img: "english.jpg",
         alt: "English",
-        text: "English"
+        text: "English",
       },
       {
         img: "english.jpg",
         alt: "English",
-        text: "English"
+        text: "English",
       },
       {
         img: "english.jpg",
         alt: "English",
-        text: "English"
+        text: "English",
       },
-    ]
+    ],
   };
 
   sampleData.about = generateGibberish();
-  
-  const faqItems = [
-    {
-      question: "Question1",
-      answer: "Answer to Question1",
-    },
-    {
-      question: "Question2",
-      answer: "Answer to Question2",
-    },
-    {
-      question: "Question3",
-      answer: "Answer to Question3",
-    },
-    {
-      question: "Question4",
-      answer: "Answer to Question4",
-    },
-    {
-      question: "Question5",
-      answer: "Answer to Question5",
-    },
-  ];
   return (
     <div className="page tutorPage">
       <Header />
       <TutorInfo {...sampleData} />
       <TutorAbout about={sampleData.about} />
       <TutorReview review={sampleData.review} />
-      <TutorFAQs faqItems={faqItems} />
-      <TutorSubsets servicesOffered={sampleData.servicesOffered} languages={sampleData.languages} />
+      <TutorFAQs faq={sampleData.faq} />
+      <TutorSubsets
+        servicesOffered={sampleData.servicesOffered}
+        languages={sampleData.languages}
+      />
       <Footer />
       <Outlet />
     </div>

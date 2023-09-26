@@ -10,7 +10,7 @@ function TutorSubsets(props) {
     const languages = arrayToCards(props.languages);
 
     return (
-        <div className="tutor-page--tutor-subsets-shade">
+        <div className="tutor-page--tutor-subsets-shade final">
             <section className="tutor-page--tutor-subsets">
                 <h1 className="tutor-page--section-header">Services Offered</h1>
                 <div className="tutor-page--tutor-subsets-top">

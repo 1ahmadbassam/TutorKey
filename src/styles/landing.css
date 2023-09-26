@@ -1,0 +1,86 @@
+.landing--hero {
+  background-color: #557c89;
+  padding: 0.625rem 0;
+}
+
+.landing--hero--layout {
+  margin: 0 3rem 0 5.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.landing--hero--layout > h1 {
+  color: white;
+  align-self: flex-start;
+  font-family: "Kiwi Maru", serif;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: left;
+  max-width: 42%;
+  margin: 3rem auto 0 0;
+}
+
+.landing--hero--books-img {
+  max-width: 120px;
+  max-height: 120px;
+  margin-right: 1.5rem;
+  margin-bottom: -8rem;
+}
+
+.landing--hero--diag-img {
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.landing--features p,
+.landing--features h1,
+.landing--features h2,
+.landing--features h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.landing--features--layout {
+  background-color: white;
+  color: #557c89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  width: 75%;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+}
+
+.landing--features--feature {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 0.5rem;
+  max-width: 400px;
+  height: 250px;
+  border-left: 5px solid #557c89;
+  margin: 0;
+}
+
+.landing--features--feature > h2 {
+    color: #557c89;
+    font-size: 40px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+}
+
+.landing--features--feature > h3 {
+    color: #11323D;
+    font-size: 22px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.landing--features--feature > img {
+    max-width: 40px;
+    max-height: 40px;
+}

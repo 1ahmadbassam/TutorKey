@@ -1,50 +1,39 @@
 import React, { useState } from "react";
 
-function FAQItem({ question, answer }) {
+function FAQItem(props) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <div className="DropDown">
-      <button className="FAQ_Questions" onClick={toggleOpen}>
-        {question}
-        <i
-          className="fa-solid fa-angle-down"
-          style={{color:"#ffffff" }}
-          id="Down_Arrows_in_FAQs"
-        ></i>
+    <div className="tutor-page--tutor-faq--questions-dropdown">
+      <button className="tutor-page--tutor-faq--questions-button" onClick={toggleOpen}>
+        <div>
+          <span>{props.question}</span>
+          <img src="./images/expand.svg" alt="Show more" />
+        </div>
       </button>
-      <div className="Dropdown-Content" style={{ display: isOpen ? "block" : "none" }}>
-        <p>{answer}</p>
+      <div className="tutor-page--tutor-faq--questions-dropdown-content" style={{ display: isOpen ? "block" : "none" }}>
+        <p>{props.answer}</p>
       </div>
     </div>
   );
 }
 
-function TutorFAQs({ faqItems }) {
+function TutorFAQs(props) {
+  const faqItems = props.faq.map((el, i) => <FAQItem key={i} keyVal={i} question={el.question} answer={el.answer} />);
   return (
-    <div className="tutor-page--tutor-FAQs">
-      <div className="Tutor_FAQ_Section">
-        <h1 className="FAQ_Title">FAQs</h1>
-        <div className="FAQs_questions_div">
-          {faqItems.map((item, index) => (
-            <FAQItem key={index} question={item.question} answer={item.answer} />
-          ))}
-        </div>
-
-        <p className="Add_Your_Question_Text">Add your question:</p>
-
-        <div className="Adding_Question_With_Submit">
-          <input type="text" className="Adding_Question_FAQs" placeholder="Add your question..." />
-          <button type="submit" className="Submit_Button">
-            Submit
-          </button>
-        </div>
-      </div>
-    </div>
+      <section className="tutor-page--tutor-faq">
+        <h1 className="tutor-page--section-header">FAQs</h1>
+        <aside className="tutor-page--tutor-faq--questions">
+          {faqItems}
+        </aside>
+        <aside className="tutor-page--tutor-faq--add-question-box">
+        <p className="tutor-page--tutor-faq--add-question-subheader">Ask this tutor a question:</p>
+          <input type="text" placeholder="Do you offer assignments for students?" />
+          <button type="submit">Submit</button>
+        </aside>
+      </section>
   );
 }
 

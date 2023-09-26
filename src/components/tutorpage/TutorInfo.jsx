@@ -24,7 +24,7 @@ function TutorInfo(props) {
     const priceRange = props.priceRange.end ? `Prices from $${props.priceRange.start} to $${props.priceRange.end}` : `Prices starting from $${props.priceRange.start}`;
 
     return (
-        <section className="tutor-page--tutor-info">
+        <section className="tutor-page--tutor-info primary">
             <div className="tutor-page--tutor-info--pfp">
                 <img src={`./images/${props.profilePic}`}  alt="Tutor profile pic"/>
             </div>
