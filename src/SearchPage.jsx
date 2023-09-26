@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import './styles.css'; // Import your CSS file
+import React, { Component } from "react";
+import "./styles.css"; // Import your CSS file
 
 class TutorSearch extends Component {
   state = {
     images: [
-      { src: 'image1.png', text: 'ACT' },
-      { src: 'image2.png', text: 'Arabic' },
-      { src: 'image3.png', text: 'C++' },
-      { src: 'image4.png', text: 'Chem' },
+      { src: "image1.png", text: "ACT" },
+      { src: "image2.png", text: "Arabic" },
+      { src: "image3.png", text: "C++" },
+      { src: "image4.png", text: "Chem" },
       // Add more images and text here
     ],
     currentIndex: 0,
     isAnimating: false,
-    searchText: '',
+    searchText: "",
     showDropdown: false,
   };
 
@@ -41,7 +41,7 @@ class TutorSearch extends Component {
     const updatedCourses = this.state.images.map((image, index) => {
       const slideIndex = (currentIndex + index) % images.length;
       const slide = { ...image };
-      slide.transform = 'translateX(-100%)'; // Swipe right animation
+      slide.transform = "translateX(-100%)"; // Swipe right animation
       return slide;
     });
 
@@ -51,9 +51,9 @@ class TutorSearch extends Component {
       const updatedImages = updatedCourses.map((image, index) => {
         const slideIndex = (newCurrentIndex + index) % images.length;
         const slide = { ...image };
-        slide.src = 'images/' + images[slideIndex].src;
+        slide.src = "images/" + images[slideIndex].src;
         slide.text = images[slideIndex].text; // Update text
-        slide.transform = 'translateX(0)'; // Reset the transform
+        slide.transform = "translateX(0)"; // Reset the transform
         return slide;
       });
 
@@ -102,7 +102,7 @@ class TutorSearch extends Component {
           )}
         </div>
         <h2 className="header2">Best Tutors</h2>
-        <div id="Tutors" style={{ display: 'inline' }}>
+        <div id="Tutors" style={{ display: "inline" }}>
           <div className="Courses">
             {images.map((image, index) => (
               <div key={index} className="container1">
@@ -117,14 +117,14 @@ class TutorSearch extends Component {
             ))}
             <button
               className="nextBtn"
-              style={{ backgroundColor: 'none' }}
+              style={{ backgroundColor: "none" }}
               onClick={this.handleNextButtonClick}
             >
               <span
                 className="material-symbols-outlined"
                 style={{
-                  fontSize: '60px',
-                  color: '#215160',
+                  fontSize: "60px",
+                  color: "#215160",
                 }}
               >
                 arrow_circle_right
