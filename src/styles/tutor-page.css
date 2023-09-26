@@ -337,7 +337,7 @@
 }
 
 .tutor-page--tutor-faq--add-question-box > input::placeholder {
-  color:rgba(119, 119, 119, 60%);
+  color: rgba(119, 119, 119, 60%);
   font-style: italic;
 }
 
@@ -415,8 +415,10 @@
   text-indent: 0.75rem;
 }
 
-.tutor-page--tutor-faq--questions-dropdown:hover .tutor-page--tutor-faq--questions-dropdown-content,
-.tutor-page--tutor-faq--questions-dropdown:focus-within .tutor-page--tutor-faq--questions-dropdown-content {
+.tutor-page--tutor-faq--questions-dropdown:hover
+  .tutor-page--tutor-faq--questions-dropdown-content,
+.tutor-page--tutor-faq--questions-dropdown:focus-within
+  .tutor-page--tutor-faq--questions-dropdown-content {
   display: block;
 }
 

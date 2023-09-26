@@ -67,20 +67,20 @@
 }
 
 .landing--features--feature > h2 {
-    color: #557c89;
-    font-size: 40px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
+  color: #557c89;
+  font-size: 40px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
 }
 
 .landing--features--feature > h3 {
-    color: #11323D;
-    font-size: 22px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
+  color: #11323d;
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 .landing--features--feature > img {
-    max-width: 40px;
-    max-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
 }
