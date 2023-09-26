@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "20.x"
       - name: Prettier
-        run: npx prettier --write **/*.js **/*.css **/*.json **/*.html .babelrc
+        run: npx prettier --write **/*.js **/*.jsx **/*.css **/*.json **/*.html .babelrc
           
       - uses: stefanzweifel/git-auto-commit-action@v4
         if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
