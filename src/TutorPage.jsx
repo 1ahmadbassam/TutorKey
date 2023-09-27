@@ -226,7 +226,7 @@ function TutorPage() {
 
   sampleData.about = generateGibberish();
   return (
-    <div className="page tutorPage">
+    <div className="page tutor-page">
       <Header />
       <TutorInfo {...sampleData} />
       <TutorAbout about={sampleData.about} />

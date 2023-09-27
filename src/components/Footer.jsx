@@ -1,19 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import NavLink from "./NavLink";
 
 function Footer() {
     return (
         <footer className="footer">
             <h1 className="logo--title no-margin">TutorKey</h1>
-            <nav className="navbar no-margin">
-                <Link to="/">
-                    <p>OVERVIEW</p>
-                </Link>
-                <p>TUTORS</p>
-                <p>CONTACT US</p>
-                <p>ABOUT</p>
-                <button className="navbar--sign-up">SIGN-UP</button>
-            </nav>
+            <NavLink />
             <div className="social-icons center">
                 {
                     //TODO: Actually replace these with our website's social media
