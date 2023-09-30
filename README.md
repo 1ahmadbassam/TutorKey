@@ -1,3 +1,5 @@
+Work on this project was cancelled on 27/09/2023 due to fools that value themselves too much. Accordingly, the repo was archived. I have no interest in continuing the work and especially that neither the idea nor the designs are mine (not that they were really good anyway). 
+
 # TutorKey
 Tutor finding website. Built from scratch in React.JS and pure Javascript as a project for Amazon SWE Workshops 2023.
 
